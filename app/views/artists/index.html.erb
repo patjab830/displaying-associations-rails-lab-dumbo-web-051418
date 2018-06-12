@@ -1,0 +1,4 @@
+<h1>List of Artists</h1>
+<% @artists.each do |artist| %>
+<%= artist.name %> - <% if artist.songs.count == 1 %>1 song<%else%><%= artist.songs.count %> songs<%end%><br/>
+<% end %>
